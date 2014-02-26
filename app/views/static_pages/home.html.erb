@@ -1,2 +1,14 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<h1>Home page</h1>
+
+
+<h1>Life stories </h1>
+
+<ul>
+  <% @posts.each do |post| %>
+      <li>
+        <h2><%= post.title %></h2>
+        <img src="" alt=""/>
+        <p><%= post.text %></p>
+      </li>
+  <% end %>
+</ul>
