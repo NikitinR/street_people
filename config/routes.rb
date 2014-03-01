@@ -1,5 +1,7 @@
 StreetPeople::Application.routes.draw do
 
+  resources :events
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :posts
@@ -8,6 +10,7 @@ StreetPeople::Application.routes.draw do
   get "static_pages/home"
   get "posts/index", as: :gallery
   get "static_pages/help", as: :help
+  get "events/all", as: 'all'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
