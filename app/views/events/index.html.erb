@@ -1,12 +1,11 @@
 <h2>Мероприятия</h2>
 
 <table>
-    <% @events.order('created_at desc').limit(1).each do |event| %>
+    <% @events.each do |event| %>
       <tr>
-        <td><%= event.name %></td>
-        <td><%= event.description %></td>
+        <td><%= link_to event.name, event_path(event) %></td>
+        <td><%= link_to event.description, event_path(event) %></td>
       </tr>
   <% end %>
 </table>
 
-<%= link_to 'Архив мероприятий', all_path %>
