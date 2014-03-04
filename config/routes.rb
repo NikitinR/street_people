@@ -1,5 +1,6 @@
 StreetPeople::Application.routes.draw do
 
+  mount Ckeditor::Engine => '/ckeditor'
   resources :events
 
   devise_for :admin_users, ActiveAdmin::Devise.config

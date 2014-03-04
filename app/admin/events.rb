@@ -13,5 +13,11 @@ ActiveAdmin.register Event do
   #  permitted << :other if resource.something?
   #  permitted
   # end
-  
+  form do |f|
+    f.inputs do
+      f.input :name
+      f.input :description, as: :ckeditor 
+    end
+  f.actions
+  end
 end
