@@ -1,5 +1,7 @@
 StreetPeople::Application.routes.draw do
 
+  resources :teams
+
   mount Ckeditor::Engine => '/ckeditor'
   resources :events
 
