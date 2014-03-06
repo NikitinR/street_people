@@ -69,35 +69,12 @@ ActiveRecord::Schema.define(version: 20140305233211) do
     t.datetime "updated_at"
   end
 
-  create_table "gallery_posts", force: true do |t|
-    t.string   "title"
-    t.string   "img"
-    t.text     "story"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "images", force: true do |t|
-    t.string   "title"
-    t.text     "text"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "posts", force: true do |t|
     t.string   "title"
     t.text     "text"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image"
-  end
-
-  create_table "stories", force: true do |t|
-    t.string   "title"
-    t.string   "img"
-    t.text     "text"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "teams", force: true do |t|
