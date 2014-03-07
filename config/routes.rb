@@ -1,5 +1,7 @@
 StreetPeople::Application.routes.draw do
 
+  match 'feedbacks' => 'feedbacks#create', :as => :feedback, via: [:get, :post]
+  match 'feedbacks/new' => 'feedbacks#new', :as => :new_feedback, via: [:get, :post]
   resources :teams
 
   mount Ckeditor::Engine => '/ckeditor'
