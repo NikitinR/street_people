@@ -2,19 +2,23 @@ StreetPeople::Application.routes.draw do
 
   match 'feedbacks' => 'feedbacks#create', :as => :feedback, via: [:get, :post]
   match 'feedbacks/new' => 'feedbacks#new', :as => :new_feedback, via: [:get, :post]
+  
   resources :teams
 
   mount Ckeditor::Engine => '/ckeditor'
+  
+  get 'events/archive', to: 'events#archive'
   resources :events
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+
+  get 'posts/index', as: :gallery
   resources :posts
 
-  get "static_pages/contacts", as: :contacts
-  get "static_pages/home"
-  get "posts/index", as: :gallery
-  get "static_pages/help", as: :help
+  get 'static_pages/contacts', as: :contacts
+  get 'static_pages/home'
+  get 'static_pages/help', as: :help
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

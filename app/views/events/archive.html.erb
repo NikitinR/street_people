@@ -1,0 +1,10 @@
+<h2>Прошедшие мероприятия</h2>
+
+<table>
+    <% @events.each do |event| %>
+      <tr>
+        <td><%= link_to event.name, event_path(event) %></td>
+        <td><%= link_to raw(event.description), event_path(event) %></td>
+      </tr>
+  <% end %>
+</table>
