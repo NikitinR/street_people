@@ -58,3 +58,4 @@ gem 'rmagick'
 gem 'mini_magick'
 gem 'ckeditor'
 gem 'will_paginate', '~> 3.0'
+gem "non-stupid-digest-assets"
