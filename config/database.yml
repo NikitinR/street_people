@@ -21,7 +21,9 @@ test:
 production:
   adapter: postgresql
   database: street_people
+  host: localhost
   encoding: unicode
   pool: 5
   timeout: 5000
-  password:
+  user: postgres
+  password: babruisk
