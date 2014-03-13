@@ -1,6 +1,6 @@
 <h2>Мероприятия</h2>
 
-<%= @events.last.name %>
-<%= link_to raw(@events.last.description), @events.last %>      
+<%= @event.name %>
+<%= link_to raw(@event.description), @event %>      
         
  <p><%= link_to 'Прошедшие мероприятия', events_archive_path %></p>
