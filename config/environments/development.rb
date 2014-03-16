@@ -27,4 +27,15 @@ StreetPeople::Application.configure do
   # number of complex assets.
   config.assets.debug = true
   config.assets.prefix = "/dev-assets"
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: 'smtp.mandrillapp.com',
+    port: '587',
+    enable_starttls_auto: true,
+    user_name: 'aarepin@gmail.com',
+    password: '52jhD7CwpNj6LhLQ3RbfGg',
+    authentification: 'login',
+    domain: 'localhost'
+  }
 end

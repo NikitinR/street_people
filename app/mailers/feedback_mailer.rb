@@ -1,5 +1,5 @@
 class FeedbackMailer < ActionMailer::Base
-  default from: 'noreply@localhost'
+  default from: 'aarepin@gmail.com'
 
   def feedback(feedback)
     @feedback = feedback
