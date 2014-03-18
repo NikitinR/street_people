@@ -9,7 +9,7 @@ class FeedbacksController < ApplicationController
     @feedback = Feedback.new(feedback_params)
     if @feedback.valid?
       FeedbackMailer.feedback(@feedback).deliver
-      render :status => :created, :text => '<h3>Дякуємо за відгук!</h3>'
+      render :status => :created, :text => '<h3>Спасибо за отзыв!</h3>'
       @feedback.save
     else
       @error_message = "Please enter your #{@feedback.subject.to_s.downcase}"
