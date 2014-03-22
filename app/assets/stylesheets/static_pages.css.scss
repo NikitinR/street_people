@@ -1,3 +1,49 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "reset.css";
+
+.wrapper {
+  background-color: #ffffff;
+
+  .header-wrap {
+    height: 100px;
+
+      .header {
+        width: 980px;
+        margin: 0 auto;
+        clear: both;
+
+        .logo {
+          img {
+            display: block;
+            float: left;
+            width: 200px;
+            height: 60px;
+            color: #808080;
+          }
+        }
+
+        .nav {
+          overflow: hidden;
+          float: left;
+          li {
+            float: left;
+            a {
+
+            }
+          }
+        }
+
+      }
+  }
+
+  .content-wrap {
+    width: 980px;
+    margin: 0 auto;
+  }
+
+
+
+}

@@ -5,20 +5,57 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+
+
+  <script>
+      $(function(){
+          $("#slides").slides({
+              responsive: true
+          });
+      });
+  </script>
+
+  <style>
+
+      #slides .slidesNext {
+          right:-35px;
+          left:auto;
+      }
+      #slides .slidesPrevious {
+          left:-35px;
+      }
+  </style>
+
+
 </head>
 <body>
-<nav>
-  <ul>
-    <li><%= link_to "Home", root_path %></li>
-    <li><%= link_to "Gallery", posts_path %></li>
-    <li><%= link_to "Team", teams_path %></li>
-    <li><%= link_to "Events", events_path %></li>
-    <li><%= link_to "Help", help_path %></li>
-    <li><%= link_to "Contacts", contacts_path %></li>
-  </ul>
-</nav>
+    <div class="wrapper">
+      <div class="header-wrap">
+        <div class="header">
+          <h1 class="logo"><img src="" alt=""/></h1>
+          <ul class="nav">
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "Gallery", posts_path %></li>
+            <li><%= link_to "Team", teams_path %></li>
+            <li><%= link_to "Events", events_path %></li>
+            <li><%= link_to "Help", help_path %></li>
+            <li><%= link_to "Contacts", contacts_path %></li>
+          </ul>
+          <div class="phone">
+            <span class="number-title">Phone numb</span>
+            <span class="number">809131455774</span>
+          </div>
+        </div>
+      </div>
+      <div class="content-wrap">
+        <%= yield %>
+      </div>
 
-<%= yield %>
+      <div class="footer-wrap">
+        <div class="footer">
 
+        </div>
+      </div>
+    </div>
 </body>
 </html>
