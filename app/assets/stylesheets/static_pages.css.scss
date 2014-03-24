@@ -19,18 +19,25 @@
           img {
             display: block;
             float: left;
-            width: 200px;
-            height: 60px;
-            color: #808080;
+            margin: 5px 50px 0 0;
           }
         }
 
         .nav {
+          margin-top: 13px;
           overflow: hidden;
           float: left;
           li {
             float: left;
             a {
+              font-family: arial;
+              font-size: 20px;
+              line-height: 24px;
+              font-weight: bold;
+              text-transform: uppercase;
+              text-decoration: none;
+              margin-right: 20px;
+
 
             }
           }
@@ -42,6 +49,9 @@
   .content-wrap {
     width: 980px;
     margin: 0 auto;
+    .content-home {
+      background: url(/assets/images/home/home-top-bg.jpg);
+    }
   }
 
 
