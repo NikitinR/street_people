@@ -59,3 +59,6 @@ gem 'mini_magick'
 gem 'ckeditor'
 gem 'will_paginate', '~> 3.0'
 gem "non-stupid-digest-assets"
+gem 'capistrano'
+gem 'capistrano-rails'
+gem 'capistrano-bundler'
