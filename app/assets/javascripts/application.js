@@ -16,3 +16,4 @@
 //= require_tree .
 //= require ckeditor/override
 //= require ckeditor/init
+//= require bjqs-1.3
