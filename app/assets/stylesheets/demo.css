@@ -39,6 +39,7 @@ pre + h2{
 #banner-fade,
 #banner-slide{
 	margin-bottom: 60px;
+    margin: 0 auto;
 }
 
 ul.bjqs-controls.v-centered li a{
