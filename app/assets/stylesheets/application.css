@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require_bjqs
+ *= require_jquery.fancybox
  *= require_demo
  *= require_tree .
  */

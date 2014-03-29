@@ -1,18 +1,11 @@
-<h1>Gallery</h1>
 
-<table>
+<% @posts.each do |post| %>
+    <a class="fancybox" rel="group" title="<%= raw(post.text) %>" href="<%= post.image.url(:thumb).to_s %>"><img src="<%= post.image.url(:thumb).to_s %>" alt="<%= raw(post.title) %>" /></a>
+<% end %>
 
-  <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= raw(post.text) %></td>
-        <td><%= image_tag post.image.url(:thumb).to_s %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post_path(post),
-                        method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-  <% end %>
-</table>
 
-<%= will_paginate @posts %>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".fancybox").fancybox();
+    });
+</script>
