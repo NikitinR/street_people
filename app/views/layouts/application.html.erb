@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Help for people | <%= yield(:title) %></title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -25,8 +26,8 @@
             <li><%= link_to "Contacts", contacts_path %></li>
           </ul>
           <div class="phone">
-            <span class="number-title">Phone numb</span>
-            <span class="number">809131455774</span>
+            <span class="number-title">Бесплатная гарячая линия:</span>
+            <span class="number">8005005050</span>
           </div>
         </div>
       </div>
@@ -36,6 +37,12 @@
 
       <div class="footer-wrap">
         <div class="footer">
+          <ul class="social">
+            <li><a href="#">Vimeo</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Youtube</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
 
         </div>
       </div>
