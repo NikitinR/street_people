@@ -1,13 +1,21 @@
 <div class="content-home">
-    <h1>Home page</h1>
-
-    <ul>
+  <div id="banner-fade">
+    <ul class="bjqs">
       <% @posts.each do |post| %>
           <li>
-            <h2><%= post.title %></h2>
             <%= image_tag post.image.url(:thumb).to_s %>
+            <h2><%= post.title %></h2>
             <p><%= post.text %></p>
           </li>
       <% end %>
     </ul>
+  </div>
+  <script type="text/javascript">
+      $('#banner-fade').bjqs({
+          showmarkers : false
+//        height      : 320,
+//        width       : 620,
+//        responsive  : true
+      });
+  </script>
 </div>
