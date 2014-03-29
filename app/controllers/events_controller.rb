@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   def index
-    @event = Event.last
+    @events = Event.all.order(created_at: :asc).last(3)
   end
 
   def show
@@ -9,5 +9,11 @@ class EventsController < ApplicationController
 
   def archive
   	@events = Event.all
-  end	
+  end
+
+  private
+  def event_params
+    params.require(:event).permit(:name, :description, :image)
+  end
+
 end

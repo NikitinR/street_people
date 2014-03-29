@@ -2,7 +2,7 @@
   <strong>Title:</strong>
   <%= @event.name %>
 </p>
-
+<%= image_tag @event.image.url(:thumb).to_s %>
 <p>
   <strong>Description:</strong>
   <%= raw(@event.description) %>
