@@ -3,57 +3,65 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @import "reset.css";
+body {
+  overflow-y: scroll;
 
-.wrapper {
-  background-color: #ffffff;
+  .wrapper {
+    background-color: #ffffff;
+    background-image: url(image-path('home/home-top-bg.jpg'));
+    background-position: center 50px;
+    background-repeat: no-repeat;
 
-  .header-wrap {
-    height: 100px;
+    .header-wrap {
+      height: 100px;
 
-      .header {
-        width: 980px;
-        margin: 0 auto;
-        clear: both;
+        .header {
+          width: 980px;
+          margin: 0 auto;
+          clear: both;
 
-        .logo {
-          img {
-            display: block;
-            float: left;
-            margin: 5px 50px 0 0;
-          }
-        }
-
-        .nav {
-          margin-top: 13px;
-          overflow: hidden;
-          float: left;
-          li {
-            float: left;
-            a {
-              font-family: arial;
-              font-size: 20px;
-              line-height: 24px;
-              font-weight: bold;
-              text-transform: uppercase;
-              text-decoration: none;
-              margin-right: 20px;
-
-
+          .logo {
+            img {
+              display: block;
+              width: 113px;
+              height: 44px;
+              float: left;
+              margin: 5px 50px 0 0;
+              background-image: url(image-path('home/logo.jpg'));
             }
           }
+
+          .nav {
+            margin-top: 13px;
+            overflow: hidden;
+            float: left;
+            li {
+              float: left;
+              a {
+                font-family: arial;
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-decoration: none;
+                margin-right: 20px;
+
+
+              }
+            }
+          }
+
         }
-
-      }
-  }
-
-  .content-wrap {
-    width: 980px;
-    margin: 0 auto;
-    .content-home {
-      background: url(/assets/images/home/home-top-bg.jpg);
     }
+
+    .content-wrap {
+      width: 980px;
+      margin: 0 auto;
+      .content-home {
+      }
+    }
+
+
+
   }
-
-
-
 }
