@@ -2850,37 +2850,33 @@ body .wrapper .content-wrap .content-home h1 {
   font-size: 24px;
   color: #292929;
 }
-
-/* line 107, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
-.home .footer-wrap .footer {
-  width: 980px;
-  margin: 0 auto;
-}
-/* line 111, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
-.home .footer-wrap .footer .social li {
-  float: left;
-}
-/* line 113, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
-.home .footer-wrap .footer .social li .vimeo a {
-  display: block;
-  width: 28px;
-  height: 25px;
-  background-image: url("/dev-assets/home/vimeo-icon.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom left;
-}
-
-/* line 128, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
-.wrapper:not(.home) .footer-wrap {
+/* line 90, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
+body .wrapper .footer-wrap {
   clear: both;
   width: 100%;
   background-image: url("/dev-assets/home/footer-bg.jpg");
   background-repeat: no-repeat;
   background-position: bottom left;
 }
-/* line 134, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
-.wrapper:not(.home) .footer-wrap .footer {
+/* line 96, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
+body .wrapper .footer-wrap .footer {
   width: 980px;
   height: 212px;
   margin: 0 auto;
+}
+/* line 100, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
+body .wrapper .footer-wrap .footer .social {
+  width: 400px;
+  margin: 0 auto;
+}
+/* line 103, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
+body .wrapper .footer-wrap .footer .social .vim {
+  float: left;
+}
+/* line 106, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
+body .wrapper .footer-wrap .footer .social a {
+  display: block;
+  width: 28px;
+  height: 25px;
+  background-image: url("/dev-assets/home/vimeo-icon.jpg");
 }

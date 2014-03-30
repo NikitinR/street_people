@@ -6,13 +6,13 @@
 body {
   overflow-y: scroll;
   font-family: 'Roboto Condensed', sans-serif;
-
-  .wrapper {
+  .wrapper.home {
     background-color: #ffffff;
     background-image: url(image-path('home/home-top-bg.jpg'));
     background-position: center 60px;
     background-repeat: no-repeat;
-
+  }
+  .wrapper {
     .header-wrap {
 
         .header {
@@ -67,18 +67,78 @@ body {
       width: 980px;
       margin: 0 auto;
       .content-home {
+        #banner-fade {
+          margin-bottom: 5px;
+        }
+        .about-us {
+          width: 460px;
+          margin: 0 auto 28px;
+          text-align: center;
+          p {
+            color: #535353;
+            font-size: 13px;
+          }
+        }
+        h1 {
+          margin-bottom: 21px;
+          font-size: 24px;
+          color: #292929;
+        }
+
       }
     }
     .footer-wrap {
-      clear: both;
-      width: 100%;
-      .footer {
-        width: 980px;
-        margin: 0 auto;
+      //clear: both;
+      //width: 100%;
+      //background-image: url(image-path('home/footer-bg.jpg'));
+      //background-repeat: no-repeat;
+      //background-position: bottom left;
+      //.footer {
+      //  width: 980px;
+      //  height: 212px;
+      //  margin: 0 auto;
       }
     }
 
+  }
 
+  .home {
+    .footer-wrap {
+      .footer {
+        width: 980px;
+        margin: 0 auto;
+        .social {
+          li {
+            float: left;
+            .vimeo a {
+              display: block;
+              width: 28px;
+              height: 25px;
+              background-image: url(image-path('home/vimeo-icon.jpg'));
+              background-repeat: no-repeat;
+              background-position: bottom left;
+            }
+          }
+        }
+      }
+    }
+  }
 
+  .wrapper:not(.home) {
+    .footer-wrap {
+      clear: both;
+      width: 100%;
+      background-image: url(image-path('home/footer-bg.jpg'));
+      background-repeat: no-repeat;
+      background-position: bottom left;
+      .footer {
+        width: 980px;
+        height: 212px;
+        margin: 0 auto;
+        .social {
+          display: none;
+        }
+
+    }
   }
 }

@@ -2860,17 +2860,12 @@ body .wrapper .content-wrap .content-home h1 {
 .home .footer-wrap .footer .social li {
   float: left;
 }
-/* line 113, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
-.home .footer-wrap .footer .social li .vimeo a {
-  display: block;
-  width: 28px;
-  height: 25px;
+/* line 114, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
+.home .footer-wrap .footer .social .vimeo {
   background-image: url("/dev-assets/home/vimeo-icon.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom left;
 }
 
-/* line 128, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
+/* line 123, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
 .wrapper:not(.home) .footer-wrap {
   clear: both;
   width: 100%;
@@ -2878,7 +2873,7 @@ body .wrapper .content-wrap .content-home h1 {
   background-repeat: no-repeat;
   background-position: bottom left;
 }
-/* line 134, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
+/* line 129, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
 .wrapper:not(.home) .footer-wrap .footer {
   width: 980px;
   height: 212px;

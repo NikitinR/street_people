@@ -2860,8 +2860,8 @@ body .wrapper .content-wrap .content-home h1 {
 .home .footer-wrap .footer .social li {
   float: left;
 }
-/* line 113, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
-.home .footer-wrap .footer .social li .vimeo a {
+/* line 114, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
+.home .footer-wrap .footer .social .vimeo a {
   display: block;
   width: 28px;
   height: 25px;
