@@ -23,5 +23,7 @@ production:
   database: street_people
   host: localhost
   encoding: unicode
+  user: postgresq
+  password: street
   pool: 5
   timeout: 5000
