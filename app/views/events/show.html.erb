@@ -1,14 +1,16 @@
-<p>
-  <strong>Title:</strong>
-  <%= @event.name %>
-</p>
-<%= image_tag @event.image.url(:post).to_s %>
-<p>
-  <strong>Description:</strong>
-  <%= raw(@event.description) %>
+<div class="content-event">
+    <p>
+      <strong>Title:</strong>
+      <%= @event.name %>
+    </p>
+    <%= image_tag @event.image.url(:post).to_s %>
+    <p>
+      <strong>Description:</strong>
+      <%= raw(@event.description) %>
 
-</p>
+    </p>
 
-<%= render 'disqus/thread' %>
+    <%= render 'disqus/thread' %>
 
-<%= link_to 'Back to Events', events_path %>
+    <%= link_to 'Back to Events', events_path %>
+</div>

@@ -1,15 +1,17 @@
-<h1>Team</h1>
+<div class="content-team">
+    <h1>Team</h1>
 
-    <ul>
-      <% @teams.each do |person| %>
-          <li>
-            <h2><%= person.name %></h2>
-            <%= image_tag person.photo.url(:thumb).to_s %>
-            <p><%= raw(person.info) %></p>
-          </li>
-      <% end %>
-    </ul>
+        <ul>
+          <% @teams.each do |person| %>
+              <li>
+                <h2><%= person.name %></h2>
+                <%= image_tag person.photo.url(:thumb).to_s %>
+                <p><%= raw(person.info) %></p>
+              </li>
+          <% end %>
+        </ul>
 
 
-<%= render 'disqus/thread' %>
+    <%= render 'disqus/thread' %>
+</div>
 

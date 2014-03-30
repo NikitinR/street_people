@@ -1,10 +1,12 @@
-<h2>Прошедшие мероприятия</h2>
+<div class="content-events-old">
+    <h2>Прошедшие мероприятия</h2>
 
- <% @events.each do |event| %>
-      <tr>
-        <td><%= event.name %></td>
-        <td><%= image_tag event.image.url(:post).to_s %></td>
-        <td><%= truncate(event.description, length: 140, escape: false) %></td>
-      </tr>
-  <% end %>
-</table> 
+     <% @events.each do |event| %>
+          <tr>
+            <td><%= event.name %></td>
+            <td><%= image_tag event.image.url(:post).to_s %></td>
+            <td><%= truncate(event.description, length: 140, escape: false) %></td>
+          </tr>
+      <% end %>
+    </table>
+</div>

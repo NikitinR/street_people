@@ -1,15 +1,17 @@
-<h2>Мероприятия</h2>
+<div class="content-events">
+    <h2>Мероприятия</h2>
 
-    <table>
+        <table>
 
-  <% @events.each do |event| %>
-      <tr>
-        <td><%= event.name %></td>
-        <td><%= image_tag event.image.url(:thumb).to_s %></td>
-        <td><%= truncate(event.description, length: 140, escape: false) %></td>
-        <td><%= link_to 'Подробнее', event %></td>
-      </tr>
-  <% end %>
-</table>  
-        
- <p><%= link_to 'Прошедшие мероприятия', events_archive_path %></p>
+      <% @events.each do |event| %>
+          <tr>
+            <td><%= event.name %></td>
+            <td><%= image_tag event.image.url(:thumb).to_s %></td>
+            <td><%= truncate(event.description, length: 140, escape: false) %></td>
+            <td><%= link_to 'Подробнее', event %></td>
+          </tr>
+      <% end %>
+    </table>
+
+    <p><%= link_to 'Прошедшие мероприятия', events_archive_path %></p>
+</div>
