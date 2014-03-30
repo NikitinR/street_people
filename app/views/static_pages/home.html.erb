@@ -3,7 +3,7 @@
     <ul class="bjqs">
       <% @posts.each do |post| %>
           <li>
-            <%= image_tag post.image.url(:thumb).to_s %>
+            <%= image_tag post.image.url(:slider).to_s %>
             <h2><%= post.title %></h2>
             <!--<p><%= post.text %></p>-->
           </li>
@@ -21,9 +21,9 @@
   </div>
   <script type="text/javascript">
       $('#banner-fade').bjqs({
-          showmarkers : false
-//        height      : 320,
-//        width       : 620,
+          showmarkers : false,
+          height      : 480,
+          width       : 480
 //        responsive  : true
       });
   </script>
