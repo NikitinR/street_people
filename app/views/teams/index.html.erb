@@ -1,15 +1,20 @@
 <div class="content-team">
-    <h1>Team</h1>
 
         <ul>
           <% @teams.each do |person| %>
               <li>
-                <h2><%= person.name %></h2>
                 <%= image_tag person.photo.url(:thumb).to_s %>
-                <p><%= raw(person.info) %></p>
+                <div class="info">
+                  <h1><%= person.name %></h1>
+                  <%= raw(person.info) %>
+                </div>
               </li>
           <% end %>
         </ul>
+
+        <!--<span class="join">Присоединиться</span>-->
+
+  <%= link_to "Присоединиться", contacts_path, :class => "join" %>
 
 
     <%= render 'disqus/thread' %>
