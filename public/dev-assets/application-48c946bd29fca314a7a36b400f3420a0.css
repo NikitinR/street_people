@@ -3092,59 +3092,34 @@ body .wrapper .content-contact-us .contact-us-mail a span {
   background-position: bottom left;
 }
 
-/* line 236, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
-.footer .social {
-  width: 300px;
-  text-align: center;
-  margin: 0 auto;
-}
-/* line 240, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
+/* line 237, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
 .footer .social li {
   float: left;
 }
-/* line 242, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
+/* line 239, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
 .footer .social li a {
   display: block;
-  overflow: hidden;
-  text-indent: -500px;
-  margin: 0 15px 90px;
+  margin: 0 15px;
 }
-/* line 249, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
+/* line 244, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
 .footer .social .vimeo a {
+  display: block;
   width: 28px;
   height: 25px;
-  background-image: url("/dev-assets/home/vimeo-icon.jpg");
-}
-/* line 254, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
-.footer .social .fb a {
-  width: 12px;
-  height: 24px;
-  background-image: url("/images/home/facebook-icon.jpg");
-}
-/* line 259, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
-.footer .social .yt a {
-  width: 28px;
-  height: 27px;
-  background-image: url("/dev-assets/home/youtube-icon.jpg");
-}
-/* line 264, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
-.footer .social .tw a {
-  width: 28px;
-  height: 24px;
-  background-image: url("/images/home/twitter-icon.jpg");
+  background-image: url("/images/home/vimeo-icom.jpg");
 }
 
-/* line 272, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
+/* line 253, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
 .wrapper:not(.home) {
   background-image: url("/dev-assets/home/team-1_02.jpg");
   background-repeat: no-repeat;
   background-position: center 60px;
 }
-/* line 276, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
+/* line 257, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
 .wrapper:not(.home) .header-wrap {
   margin-bottom: 90px;
 }
-/* line 279, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
+/* line 260, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
 .wrapper:not(.home) .footer-wrap {
   clear: both;
   width: 100%;
@@ -3152,13 +3127,13 @@ body .wrapper .content-contact-us .contact-us-mail a span {
   background-repeat: no-repeat;
   background-position: bottom center;
 }
-/* line 285, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
+/* line 266, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
 .wrapper:not(.home) .footer-wrap .footer {
   width: 980px;
   height: 212px;
   margin: 0 auto;
 }
-/* line 289, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
+/* line 270, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/static_pages.css.scss */
 .wrapper:not(.home) .footer-wrap .footer .social {
   display: none;
 }

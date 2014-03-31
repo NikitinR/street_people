@@ -232,6 +232,43 @@ body {
     }
   }
 
+
+  .social {
+    width: 120px !important;
+    text-align: center;
+    margin: 0 auto;
+    li {
+      float: left;
+      a {
+        display: block;
+        overflow: hidden;
+        text-indent: -500px;
+        margin: 0 15px 90px;
+      }
+    }
+    .vimeo a {
+      width: 28px;
+      height: 25px;
+      background-image: url(image-path('home/vimeo-icon.jpg'));
+    }
+    .fb a {
+      width: 12px;
+      height: 24px;
+      background-image: url(image-path('home/facebook-icon.jpg'));
+    }
+    .yt a {
+      width: 28px;
+      height: 27px;
+      background-image: url(image-path('home/youtube-icon.jpg'));
+    }
+    .tw a {
+      width: 28px;
+      height: 24px;
+      background-image: url(image-path('home/twitter-icon.jpg'));
+    }
+  }
+
+
   .wrapper:not(.home) {
     background-image: url(image-path('home/team-1_02.jpg'));
     background-repeat: no-repeat;
