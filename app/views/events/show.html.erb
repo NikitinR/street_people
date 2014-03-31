@@ -1,16 +1,14 @@
-<div class="content-event">
-    <p>
-      <strong>Title:</strong>
+<div class="event-single">
+  <%= image_tag @event.image.url(:post).to_s %>
+  <h1>
       <%= @event.name %>
-    </p>
-    <%= image_tag @event.image.url(:post).to_s %>
-    <p>
-      <strong>Description:</strong>
-      <%= raw(@event.description) %>
+  </h1>
+  <%= raw(@event.description) %>
 
-    </p>
+  <%= link_to 'Back to Events', events_path, :class => "join" %>
 
-    <%= render 'disqus/thread' %>
 
-    <%= link_to 'Back to Events', events_path %>
+  <%= render 'disqus/thread' %>
+
+
 </div>
