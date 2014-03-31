@@ -19,3 +19,4 @@
 //= require jquery.mousewheel-3.0.6.pack
 //= require ckeditor/init
 //= require bjqs-1.3
+
