@@ -7,18 +7,18 @@ StreetPeople::Application.routes.draw do
 
   mount Ckeditor::Engine => '/ckeditor'
   
-  get 'events/archive', to: 'events#archive'
+  get '/archive', to: 'events#archive'
   resources :events
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
-  get 'posts/index', as: :gallery
+  get '/gallery', to: 'posts#index'
   resources :posts
 
-  get 'static_pages/contacts', as: :contacts
-  get 'static_pages/home'
-  get 'static_pages/help', as: :help
+  get '/contacts', to: 'static_pages#contacts'
+  get '/home', to: 'static_pages#home'
+  get '/help', to: 'static_pages#help'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
