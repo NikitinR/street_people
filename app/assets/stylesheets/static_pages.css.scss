@@ -106,7 +106,10 @@ body {
       margin: 0 auto;
       .content-home {
         #banner-fade {
-          margin-bottom: 5px;
+          margin-bottom: 0;
+        }
+        .about-us {
+          margin-top: 25px;
         }
         p {
           @include paragraph;
@@ -211,6 +214,11 @@ body {
   }
 
   .home {
+    .bjqs-slide {
+      img {
+        height: 480px !important;
+      }
+    }
     .footer-wrap {
       .footer {
         width: 980px;
