@@ -1,6 +1,6 @@
 <div class="content-gallery">
     <% @posts.each do |post| %>
-        <a class="fancybox" rel="group" title="<%= raw(post.text) %>" href="<%= post.image.url(:gallery).to_s %>"><img src="<%= post.image.url(:thumb).to_s %>" alt="<%= raw(post.title) %>" /></a>
+        <a class="fancybox" rel="group" title="<%= raw post.text %>" href="<%= post.image.url(:gallery).to_s %>"><img src="<%= post.image.url(:thumb).to_s %>" alt="<%= raw post.title %>" /></a>
         <!--<a class="fancybox" rel="group" title="<%= raw(post.text) %>" href="<%= post.image.url(:gallery).to_s %>"><img src="<%= post.image.url(:thumb).to_s %>" alt="<%= raw(post.title) %>" /></a>-->
     <% end %>
 </div>

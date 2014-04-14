@@ -230,7 +230,7 @@ DEPENDENCIES
   mini_magick
   non-stupid-digest-assets
   pg
-  rails (~> 4.0.4)
+  rails (= 4.0.4)
   rails_12factor
   rmagick
   russian
