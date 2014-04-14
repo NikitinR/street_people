@@ -219,6 +219,28 @@ body {
         height: 480px !important;
       }
     }
+    ul.bjqs-controls.v-centered li.bjqs-next a {
+      right: -30px;
+      display: block;
+      padding: 0;
+      margin: 0;
+      width: 21px;
+      height: 60px;
+      background-image: url(image-path('home/home-slide-right.png'));
+      background-repeat: no-repeat;
+    }
+
+    ul.bjqs-controls.v-centered li.bjqs-prev a {
+      left: -30px;
+      display: block;
+      padding: 0;
+      margin: 0;
+      width: 21px;
+      height: 60px;
+      background-image: url(image-path('home/home-slide-left.png'));
+      background-repeat: no-repeat;
+    }
+
     .footer-wrap {
       .footer {
         width: 980px;

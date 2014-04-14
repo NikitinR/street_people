@@ -2387,8 +2387,6 @@ pre + h2{
 
 ul.bjqs-controls.v-centered li a{
 	display:block;
-    overflow: hidden;
-    text-indent: -100px;
 	padding:10px;
 	/*background:#fff;*/
 	/*color:#000;*/
