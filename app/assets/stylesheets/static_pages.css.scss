@@ -284,20 +284,36 @@ body {
     .header-wrap {
       margin-bottom: 90px;
     }
-    .footer-wrap {
-      clear: both;
-      width: 100%;
-      background-image: url(image-path('home/footer-bg.jpg'));
-      background-repeat: no-repeat;
-      background-position: bottom center;
-      .footer {
-        width: 980px;
-        height: 212px;
-        margin: 0 auto;
-        .social {
-          display: none;
-        }
+  }
+  .footer-wrap:not(.home) {
+    clear: both;
+    width: 100%;
+    background-image: url(image-path('home/footer-bg.jpg'));
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    .footer {
+      width: 980px;
+      height: 212px;
+      margin: 0 auto;
+      .social {
+        display: none;
+      }
 
     }
   }
+
+/* stack footer styles */
+
+html, body {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -212px;
+}
+.footer-wrap, .push {
+  height: 212px;
+  clear: both;
 }

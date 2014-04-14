@@ -35,8 +35,9 @@
       <div class="content-wrap">
         <%= yield %>
       </div>
-
-      <div class="footer-wrap">
+      <div class="push"></div>
+    </div>
+    <div class="footer-wrap <%= controller_path %> <%= action_name %> ">
         <div class="footer">
           <ul class="social">
             <li class="vimeo"><a href="#">Vimeo</a></li>
@@ -44,6 +45,6 @@
           </ul>
         </div>
       </div>
-    </div>
+
 </body>
 </html>
