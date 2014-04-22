@@ -2545,7 +2545,7 @@ a#feedback_link {
   width: 26px;
   height: 96px;
   overflow: hidden;
-  background: #92bc20 url(/assets/feedback/feedback_tab.png);
+  background: #92bc20 url(/dev-assets/feedback/feedback_tab.png);
   _position: absolute;
   /*_background-image: image-url('feedback/feedback_tab.png');*/
 }
@@ -2559,8 +2559,8 @@ a#feedback_link.left {
   top: 25%;
   width: 26px;
   height: 96px;
-  background-image: url(/assets/feedback/feedback_tab.png);
-  _background-image: url(/assets/feedback/feedback_tab.png);
+  background-image: url(/dev-assets/feedback/feedback_tab.png);
+  _background-image: url(/dev-assets/feedback/feedback_tab.png);
 }
 /* line 29, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
 a#feedback_link.right {
@@ -2568,8 +2568,8 @@ a#feedback_link.right {
   top: 25%;
   width: 26px;
   height: 96px;
-  background-image: url(/assets/feedback/feedback_tab.png);
-  _background-image: url(/assets/feedback/feedback_tab.png);
+  background-image: url(/dev-assets/feedback/feedback_tab.png);
+  _background-image: url(/dev-assets/feedback/feedback_tab.png);
 }
 /* line 36, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
 a#feedback_link.top {
@@ -2577,8 +2577,8 @@ a#feedback_link.top {
   top: 0;
   width: 96px;
   height: 26px;
-  background-image: url(/assets/feedback/feedback_tab_h.png);
-  _background-image: url(/assets/feedback/feedback_tab_h.png);
+  background-image: url(/dev-assets/feedback/feedback_tab_h.png);
+  _background-image: url(/dev-assets/feedback/feedback_tab_h.png);
 }
 /* line 43, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
 a#feedback_link.bottom {
@@ -2586,8 +2586,8 @@ a#feedback_link.bottom {
   bottom: 0;
   width: 96px;
   height: 26px;
-  background-image: url(/assets/feedback/feedback_tab_h.png);
-  _background-image: url(/assets/feedback/feedback_tab_h.png);
+  background-image: url(/dev-assets/feedback/feedback_tab_h.png);
+  _background-image: url(/dev-assets/feedback/feedback_tab_h.png);
 }
 /* line 50, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
 a#feedback_close_link {
@@ -2596,25 +2596,23 @@ a#feedback_close_link {
   position: absolute;
   height: 22px;
   width: 66px;
-  background-image: url(/assets/feedback/closelabel.gif);
-  _background-image: url(/assets/feedback/closelabel.gif);
-  background-repeat: no-repeat;
-  background-position: top right;
+  background-image: url(/dev-assets/feedback/closelabel.gif);
+  _background-image: url(/dev-assets/feedback/closelabel.gif);
 }
 
-/* line 62, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
+/* line 60, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
 div#feedback_modal_window {
   width: 300px;
   margin: 0 auto;
   position: relative;
   background-color: #FFFFFF;
 }
-/* line 67, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
+/* line 65, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
 div#feedback_modal_content, div#feedback_loading {
   padding: 12px;
 }
 
-/* line 70, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
+/* line 68, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
 #feedback_overlay {
   position: fixed;
   top: 0px;
@@ -2627,70 +2625,28 @@ div#feedback_modal_content, div#feedback_loading {
   filter: alpha(opacity=50);
 }
 
-/* line 81, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
+/* line 79, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
 .feedback_hide {
   z-index: -100;
 }
 
-/* line 84, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
+/* line 82, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
 .feedback_overlayBG {
   background-color: #000;
   z-index: 100000;
 }
 
-/* line 88, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
+/* line 86, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
 * html #feedback_overlay {
   /* ie6 hack */
   position: absolute;
   height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
 }
 
-/* line 93, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
+/* line 91, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
 form#feedback_form .error {
   color: red;
   font-weight: bold;
-}
-
-/* line 98, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
-#feedback_modal_content > p {
-  margin-bottom: 15px;
-}
-
-/* line 104, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
-#feedback_modal_content h3 {
-  margin-bottom: 15px;
-  color: #292929;
-}
-/* line 108, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
-#feedback_modal_content p {
-  overflow: hidden;
-  font-family: arial;
-  font-size: 13px;
-  color: #535353;
-}
-/* line 115, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
-#feedback_modal_content #feedback_form label {
-  line-height: 28px;
-}
-/* line 118, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
-#feedback_modal_content #feedback_form #feedback_subject {
-  float: right;
-  width: 235px;
-  margin-bottom: 22px;
-  height: 28px;
-}
-/* line 124, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
-#feedback_modal_content #feedback_form #feedback_email {
-  float: right;
-  width: 213px;
-  margin-bottom: 10px;
-}
-/* line 129, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
-#feedback_modal_content #feedback_form #feedback_comment {
-  resize: none;
-  margin-bottom: 10px;
-  width: 253px;
-  margin-top: 0;
 }
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 

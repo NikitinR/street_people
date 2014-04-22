@@ -2683,9 +2683,8 @@ form#feedback_form .error {
 #feedback_modal_content #feedback_form #feedback_email {
   float: right;
   width: 213px;
-  margin-bottom: 10px;
 }
-/* line 129, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
+/* line 128, /home/ramzes/ruby/rails_app/street_people/app/assets/stylesheets/feedback.css.scss */
 #feedback_modal_content #feedback_form #feedback_comment {
   resize: none;
   margin-bottom: 10px;
